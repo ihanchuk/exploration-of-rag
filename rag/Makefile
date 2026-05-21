@@ -4,5 +4,8 @@ check:
 format:
 	uv run ruff format .
 
-run:
-	uv run python rag/main.py
+seed:
+	uv run python seed.py
+
+search:
+	uv run python search.py

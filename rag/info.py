@@ -1,7 +1,7 @@
-from qdrant_client import QdrantClient, models
+from client_connection import get_client
 
 
-client = QdrantClient(url="http://localhost:6333")
+client = get_client()
 Collection_Name = "Rooms"
 
 collection_info = client.get_collection(collection_name=Collection_Name)
