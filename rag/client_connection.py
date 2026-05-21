@@ -7,9 +7,6 @@ def get_client():
     global _client
 
     if _client is None:
-        _client = QdrantClient(
-            host="localhost",
-            port=6333
-        )
+        _client = QdrantClient(host="localhost", port=6333)
 
     return _client

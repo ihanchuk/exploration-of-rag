@@ -1,4 +1,4 @@
-from qdrant_client import  models
+from qdrant_client import models
 from client_connection import get_client
 
 
@@ -30,12 +30,11 @@ points = [
         vector=[0.3, 0.44, 0.51, 0.62],
         payload={"name": "Room C1.1", "price": 220, "cat": "premium"},
     ),
-      models.PointStruct(
+    models.PointStruct(
         id=5,
         vector=[0.8, 0.88, 0.67, 0.92],
         payload={"name": "Room C1.2", "price": 260, "cat": "lux"},
-    )
-
+    ),
 ]
 
 
